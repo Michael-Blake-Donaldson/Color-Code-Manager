@@ -1,0 +1,9 @@
+﻿<Window x:Class="ColorCodeWebViewApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="Color Code Manager" Height="450" Width="800">
+    <Grid>
+        <wv2:WebView2 Name="webView" Source="C:\Users\blake\OneDrive\Desktop\VS Projects\ColorCodeWebviewApp\index.html" />
+    </Grid>
+</Window>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Code Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Color Code Manager</h1>
+        <div class="buttons">
+            <button id="addColorCodeButton">Add Color Code</button>
+            <button id="createTemplateButton">Create Color Template</button>
+            <button id="listTemplatesButton">List Color Templates</button>
+            <button id="saveTemplatesButton">Save Templates</button>
+            <button id="loadTemplatesButton">Load Templates</button>
+            <button id="exportTemplatesButton">Export Templates</button>
+            <input type="file" id="importTemplatesInput" style="display:none;" />
+            <button id="importTemplatesButton">Import Templates</button>
+            <button id="viewAllColorCodesButton">View All Color Codes</button>
+        </div>
+        <div class="sorting-filtering">
+            <select id="sortTemplatesSelect">
+                <option value="">Sort By</option>
+                <option value="name">Name</option>
+                <option value="colorCount">Number of Color Codes</option>
+            </select>
+            <input type="text" id="filterTemplatesInput" placeholder="Filter by name" />
+            <button id="filterTemplatesButton">Filter</button>
+        </div>
+        <ul id="templatesList"></ul>
+    </div>
+
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Template Details</h2>
+            <p id="templateDetails"></p>
+        </div>
+    </div>
+
+    <div id="allColorsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>All Color Codes</h2>
+            <ul id="allColorsList"></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
